@@ -1,4 +1,4 @@
-# Dëse Projet beschreift d'Erneierung vun der Krëppschen an der Kierch St Martin
+# Dëse Projet beschreift d'Erneierung vun der Krëppchen an der Kierch St Martin
 
 ***
 
