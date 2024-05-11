@@ -1,0 +1,47 @@
+@startuml
+
+skinparam linetype ortho
+
+class FB_MainStateMachine{
+    -fbLantern : FB_Lamp
+    -fbFire : FB_Lamp
+    -fbGlockenspiel : FB_Lamp
+
+    
+}
+
+class FB_Lamp{
+    -bLampOut : BOOL 
+    
+    +turnON() : BOOL 
+    +turnOFF() : BOOL 
+}
+
+class FB_Glockenspiel{
+    -bEngagePin : BOOL 
+
+    +tunrON() : BOOL 
+    +turnOFF() : BOOL 
+}
+
+class FB_MoneyBox{
+    -bCoinSensor : BOOL
+    -bNoteSensor : BOOL 
+
+    +getCoinSensorState() : SENSORSTATE
+    +getNoreSensorState() : SENSORSTATE
+}
+
+enum SENSORSTATE{
+    NOT_DETECTED
+    DETECTED
+}
+SENSORSTATE .. FB_MoneyBox
+
+
+
+FB_Lamp --o FB_MainStateMachine
+FB_Glockenspiel --o FB_MainStateMachine 
+FB_MoneyBox --o FB_MainStateMachine
+
+@enduml
