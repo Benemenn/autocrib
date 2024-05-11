@@ -24,6 +24,13 @@
     - Schaltschrank:
         - SPS:
             - Siemens S7-1215C AC/DC/RLY
+
+
+#### Datenblätter
+
+- [Siemens S7-1215C AC DC RLY](./Datasheets/Siemens_S71215_AC-DC-RLY.pdf)
+- [SICK WL27-3P2430](./Datasheets/Sick_Lichtschranke_WL27-3P2430_1027769_de.pdf)
+
             
 
 ## Logik
