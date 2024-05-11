@@ -6,8 +6,6 @@ class FB_MainStateMachine{
     -fbLantern : FB_Lamp
     -fbFire : FB_Lamp
     -fbGlockenspiel : FB_Lamp
-
-    
 }
 
 class FB_Lamp{
