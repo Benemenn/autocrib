@@ -30,6 +30,7 @@
 
 - [Siemens S7-1215C AC DC RLY](./Datasheets/Siemens_S71215_AC-DC-RLY.pdf)
 - [SICK WL27-3P2430](./Datasheets/Sick_Lichtschranke_WL27-3P2430_1027769_de.pdf)
+- [M12-4 Buchse&Kabel](./Datasheets/SICK_M12-5_Buchse_dataSheet_YF2A14-050VB3XLEAX_2096235_de.pdf)
 
             
 
