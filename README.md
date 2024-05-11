@@ -64,4 +64,4 @@ dtTime = RD_LOC_T(); (alle 30min?)
 
 Die Halterung behaust den SICK WL27-3P2430 Reflextionslichttaster. Ein Reflektor (in schwarz dargestellt) dient zur Reflextion des Laser-Sensors. Münzen werden von Oben in den Spalt hineinfallen gelassen. Der Schacht ist breit genug, dass alle Münzarten dadruchlaufen können. Der Scan-Schacht ist klein genug, dass auch die kleinen Münzen nicht in den ScanSchacht hineinfallen können und Blockierungen verursachen. 
 
-![Sensor-Halter für Münzen](./CAD/CoinSensorTray/CoinSensorTray_Image.png)
+![Sensor-Halter für Münzen](./CAD/CoinSensorTray/CoinSensorTray.png)
