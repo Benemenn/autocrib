@@ -40,7 +40,7 @@
 
 ![Krippe_Statusmaschine](./out/diagrams/stateMachine/stateMachine.png)
 
-- Zeitsynchronisierung mit NTPCLient (noch herauszusuchen) und schreiben der Lokalzeit mit ``W_LOC_T`` [doku](https://support.industry.siemens.com/cs/mdm/109747174?c=81662456587&dl=ru&lc=en-US)
+- Zeitsynchronisierung mit ``RD_LOC_T`` und schreiben der Lokalzeit mit ``W_LOC_T`` [doku](https://support.industry.siemens.com/cs/mdm/109747174?c=81662456587&dl=ru&lc=en-US)
 - Minimale Beleuchtung solange keine Bewegungen erkannt wurden. 
 - Nach Bewegungserkennung, mehr Beleuchtung. 
 - Nach Münz- oder Papiergeldeinwurf, Spielen des Glockenspiels und Lichteranimation
@@ -51,6 +51,11 @@
 ### Task Diagramm
 
 dtTime = RD_LOC_T(); (alle 30min?)
+
+Zeitlesung auf eigenen Task legen? mit einer Zykluszeit von 30min?
+- Sinnvoll?
+- does it even work?
+- write time in global variable list in datatype DATE AND TIME
 
 ### Klassendiagramm
 

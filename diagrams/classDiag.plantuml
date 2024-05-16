@@ -32,6 +32,8 @@ class FB_MainStateMachine{
 
     -eMainAutoStates : MAIN_AUTO_STATES
     -eOperationMode : OPERATION_MODE
+    -tNoMovementDelayTime : TIME 
+    -fbNoMovementTimer : TON
 }
 
 enum LIGHTING_STATES{ 
