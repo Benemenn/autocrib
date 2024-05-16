@@ -2,29 +2,101 @@
 
 skinparam linetype ortho
 
+enum MAIN_AUTO_STATES{
+    INIT 
+    IDLE 
+    GRAB_TIME 
+    IDLE_MOVEMENT
+    ACT_CRIB
+    NIGHTTIME
+    ERROR = 99
+}
+MAIN_AUTO_STATES .. FB_MainStateMachine
+
+enum OPERATION_MODE{
+    AUTO 
+    MANUAL
+}
+OPERATION_MODE .. FB_MainStateMachine
+
 class FB_MainStateMachine{
+    -bEntry : BOOL
+    -bExit : BOOL
+
+    -manualNextStateButton : BOOL
+    -manualNextStateNuttonTrigger : R_TRIG
+    -modeSelector : BOOL
+
+    -fbGlockenspiel : FB_Lamp
+    -fbLights : FB_Lighting
+
+    -eMainAutoStates : MAIN_AUTO_STATES
+    -eOperationMode : OPERATION_MODE
+}
+
+enum LIGHTING_STATES{ 
+    MINIMUM_LIGHTING 
+    CYCLE_STATE_1
+    CYCLE_STATE_2 
+    CYCLE_STATE_3
+    CYCLE_STATE_4
+    CYCLE_STATE_5
+    CYCLE_STATE_6
+    CYCLE_STATE_7
+    CYCLE_STATE_8
+    CYCLE_STATE_9
+    CYCLE_STATE_10
+
+}
+LIGHTING_STATES .. FB_Ligthing
+
+class FB_Ligthing{
+    -bAutoMode : BOOL
+    -bEntry : BOOL 
+    -bExit : BOOL 
+
+    -fbCylceTimer : TON
+    -eLightStates : LIGHTING_STATES
+
     -fbLantern : FB_Lamp
     -fbFire : FB_Lamp
-    -fbGlockenspiel : FB_Lamp
+
+    -fbLightGroupSTABLE : FB_Lamp
+    -fbLightGroupBACKGROUND : FB_Lamp
+
+
+    +mClearLighting() : VOID 
+    +mMinimumLighting() : VOID
+    +mBehindLighting() : VOID
+    +mFullLighting() : VOID 
+    +mStartAutoLighting(_tDelayTime : TIME) : VOID 
+    +mNextState() : VOID
 }
 
 class FB_Lamp{
     -bLampOut : BOOL 
     
-    +turnON() : BOOL 
-    +turnOFF() : BOOL 
+    +turnON() : VOID 
+    +turnOFF() : VOID 
 }
 
 class FB_Glockenspiel{
     -bEngagePin : BOOL 
 
-    +tunrON() : BOOL 
-    +turnOFF() : BOOL 
+    -fbToggleTimer : TOFF
+
+    +turnON() : VOID 
+    +turnOFF() : VOID 
+
+    +mToggleGlockenspiel() : VOID 
 }
 
 class FB_MoneyBox{
     -bCoinSensor : BOOL
     -bNoteSensor : BOOL 
+
+    -coinTrigger : F_TRIG 
+    -billTrigger : F_TRIG
 
     +getCoinSensorState() : SENSORSTATE
     +getNoreSensorState() : SENSORSTATE
@@ -38,7 +110,11 @@ SENSORSTATE .. FB_MoneyBox
 
 
 
+
+
 FB_Lamp --o FB_MainStateMachine
+FB_Lamp --o FB_Ligthing
+FB_Ligthing --o FB_MainStateMachine
 FB_Glockenspiel --o FB_MainStateMachine 
 FB_MoneyBox --o FB_MainStateMachine
 
