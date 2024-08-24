@@ -29,7 +29,7 @@ Die Elektronische Steuerung der gesamten Krippe wurde mit einem Zeitmodul von ei
 
 Das Krippenmodell und vor allem die Elektronik des Krippenmodelles ist in die Jahre gekommen. Die Gruppe, welche sich um die Krippe kümmert hat sich daher entschieden das gesamte Krippenmodell zu sanieren, und die Elektronik in eine moderne Steuerung zu erneuern. 
 
-<img src="https://github.com/Benemenn/autocrib/blob/gh-pages/images/Krippe.jpeg?raw=true">
+<img src="https://github.com/Benemenn/autocrib/blob/gh-pages/images/Krippe.jpeg?raw=true" class="center">
 
 ## Sanierungsplan:
 
