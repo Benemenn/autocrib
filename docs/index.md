@@ -63,14 +63,6 @@
 - Error Zustand:
     - noch nicht definiert
 
-### Task Diagramm
-
-dtTime = RD_LOC_T(); (alle 30min?)
-
-Zeitlesung auf eigenen Task legen? mit einer Zykluszeit von 30min?
-- Sinnvoll?
-- does it even work?
-- write time in global variable list in datatype DATE AND TIME
 
 ***
 
