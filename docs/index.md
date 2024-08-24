@@ -13,7 +13,7 @@
     1. [Task Diagramm](#task-diagramm)
     1. [Klassendiagramm](#klassendiagramm)
 1. [CAD](#cad)
-    1. [Münzerkennung](#münzerkennung)]
+    1. [Münzerkennung](#münzerkennung)
 
 ***
 
@@ -80,4 +80,4 @@ Zeitlesung auf eigenen Task legen? mit einer Zykluszeit von 30min?
 
 Die Halterung behaust den SICK WL27-3P2430 Reflextionslichttaster. Ein Reflektor (in schwarz dargestellt) dient zur Reflextion des Laser-Sensors. Münzen werden von Oben in den Spalt hineinfallen gelassen. Der Schacht ist breit genug, dass alle Münzarten dadruchlaufen können. Der Scan-Schacht ist klein genug, dass auch die kleinen Münzen nicht in den ScanSchacht hineinfallen können und Blockierungen verursachen. 
 
-[Image here](https://github.com/Benemenn/autocrib/blob/gh-pages/CAD/CoinSensorTray/CoinSensorTray.png?raw=true)
+<img src="https://github.com/Benemenn/autocrib/blob/gh-pages/CAD/CoinSensorTray/CoinSensorTray.png?raw=true">
