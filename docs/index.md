@@ -80,4 +80,4 @@ Zeitlesung auf eigenen Task legen? mit einer Zykluszeit von 30min?
 
 Die Halterung behaust den SICK WL27-3P2430 Reflextionslichttaster. Ein Reflektor (in schwarz dargestellt) dient zur Reflextion des Laser-Sensors. Münzen werden von Oben in den Spalt hineinfallen gelassen. Der Schacht ist breit genug, dass alle Münzarten dadruchlaufen können. Der Scan-Schacht ist klein genug, dass auch die kleinen Münzen nicht in den ScanSchacht hineinfallen können und Blockierungen verursachen. 
 
-[](../CAD/CoinSensorTray/CoinSensorTray.png)
+[](https://raw.githubusercontent.com/Benemenn/autocrib/gh-pages/CAD/CoinSensorTray/CoinSensorTray.png)
