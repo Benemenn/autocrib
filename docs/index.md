@@ -5,7 +5,7 @@
 # Inhaltsverzeichnis
 
 
-[1. [Beschreibung](#beschreibung)
+1. [Beschreibung](#beschreibung)
     1. [Komponenten](#komponenten)
         1. [Datenblätter](#datenblätter)
 1. [Logik](#logik)
@@ -13,7 +13,7 @@
     1. [Task Diagramm](#task-diagramm)
     1. [Klassendiagramm](#klassendiagramm)
 1. [CAD](#cad)
-    1. [Münzerkennung](#münzerkennung)]]
+    1. [Münzerkennung](#münzerkennung)]
 
 ***
 
