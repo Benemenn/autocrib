@@ -53,7 +53,7 @@
 
 ### Statusmaschine
 
-![Krippe_Statusmaschine](../diagrams/Lights_StateMachine.png?raw=true)
+<img src="https://github.com/Benemenn/autocrib/blob/main/diagrams/Lights_StateMachine.png?raw=true" >
 
 - Zeitsynchronisierung mit ``RD_LOC_T`` und schreiben der Lokalzeit mit ``W_LOC_T`` [doku](https://support.industry.siemens.com/cs/mdm/109747174?c=81662456587&dl=ru&lc=en-US)
 - Minimale Beleuchtung solange keine Bewegungen erkannt wurden. 
