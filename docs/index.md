@@ -102,6 +102,11 @@ Die Programmierung der Steuerung wird in der Siemens eigenen Entwicklungsumgebun
 - Error Zustand:
     - noch nicht definiert
 
+Repositories: 
+
+- [PLC TiaPortal hier](https://github.com/Benemenn/autocrib_tia)
+- [Raspberry für Sound & Co (Repo passwortgeschützt)](https://github.com/Benemenn/autocrib_dashboard)
+- [Digitale Feuerstelle](https://github.com/Benemenn/autocrib_digifire)
 
 ***
 
