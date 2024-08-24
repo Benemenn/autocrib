@@ -1,1 +1,1 @@
-Die Dokumentation ist [hier]() einzusehen!
+Die Dokumentation ist [hier](https://benemenn.github.io/autocrib/) einzusehen!
