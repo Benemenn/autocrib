@@ -4,7 +4,11 @@
 
 # Inhaltsverzeichnis
 
-1. [Beschreibung](#beschreibung)
+[[TOC]]
+
+***
+
+[[1. [Beschreibung](#beschreibung)
     1. [Komponenten](#komponenten)
         1. [Datenblätter](#datenblätter)
 1. [Logik](#logik)
@@ -12,7 +16,7 @@
     1. [Task Diagramm](#task-diagramm)
     1. [Klassendiagramm](#klassendiagramm)
 1. [CAD](#cad)
-    1. [Münzerkennung](#münzerkennung)
+    1. [Münzerkennung](#münzerkennung)]]
 
 ***
 
@@ -52,7 +56,7 @@
 
 ### Statusmaschine
 
-![Krippe_Statusmaschine](./out/diagrams/stateMachine/stateMachine.png)
+![Krippe_Statusmaschine](../diagrams/Lights_StateMachine.png)
 
 - Zeitsynchronisierung mit ``RD_LOC_T`` und schreiben der Lokalzeit mit ``W_LOC_T`` [doku](https://support.industry.siemens.com/cs/mdm/109747174?c=81662456587&dl=ru&lc=en-US)
 - Minimale Beleuchtung solange keine Bewegungen erkannt wurden. 
@@ -71,10 +75,6 @@ Zeitlesung auf eigenen Task legen? mit einer Zykluszeit von 30min?
 - does it even work?
 - write time in global variable list in datatype DATE AND TIME
 
-### Klassendiagramm
-
-![Klassendiagramm_Krippe_StMartin](./out/diagrams/classDiag/classDiag.png "Klassendiagramm_Krippe_StMartin")
-
 ***
 
 ## CAD
@@ -83,4 +83,4 @@ Zeitlesung auf eigenen Task legen? mit einer Zykluszeit von 30min?
 
 Die Halterung behaust den SICK WL27-3P2430 Reflextionslichttaster. Ein Reflektor (in schwarz dargestellt) dient zur Reflextion des Laser-Sensors. Münzen werden von Oben in den Spalt hineinfallen gelassen. Der Schacht ist breit genug, dass alle Münzarten dadruchlaufen können. Der Scan-Schacht ist klein genug, dass auch die kleinen Münzen nicht in den ScanSchacht hineinfallen können und Blockierungen verursachen. 
 
-![Sensor-Halter für Münzen](./CAD/CoinSensorTray/CoinSensorTray.png)
+![Sensor-Halter für Münzen](../CAD/CoinSensorTray/CoinSensorTray.png)
