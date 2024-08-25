@@ -6,9 +6,16 @@
 
 
 1. [Beschreibung](#beschreibung)
+    1. [Einführung](#einführung)
+    1. [Sanierungsplan](#sanierungsplan)
     1. [Komponenten](#komponenten)
+        1. [Krippe](#krippe)
+        1. [Kleine Krippe](#kleine-krippe)
+        1. [Beleuchtung](#beleuchtung)
+        1. [Elektronik](#elektronik)
         1. [Datenblätter](#datenblätter)
 1. [Logik](#logik)
+    1. [Main](#main)
     1. [Statusmaschine](#statusmaschine)
     1. [Task Diagramm](#task-diagramm)
     1. [Klassendiagramm](#klassendiagramm)
