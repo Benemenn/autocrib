@@ -90,6 +90,28 @@ Ein an dem Modell verbauten Bewegungssensor ermöglicht das Abschalten der Elekt
 
 Die Programmierung der Steuerung wird in der Siemens eigenen Entwicklungsumgebung TIA-Portal realisiert. Um die verschiedenen Effekte zeitlich abspielen zu können wurde sich für das Konzept einer Statusmaschine entschieden. 
 
+### Main
+
+Das Hauptprogramm ist in LadderDiagram geschrieben. 
+
+#### Network 1 - Zeit aus CPU lesen für Nachtbetrieb
+
+<img src="https://github.com/Benemenn/autocrib/blob/main/images/Code_Main_Netw1.png?raw=true">
+
+Der Funktionsbaustein ``RD_LOC_T`` liest die CPU Zeit aus. Dasierend auf diesem Resultat wird nach einer Zeitenumwandlung die Krippe in den Nachtbetrib versetzt oder aus diesem aufgeweckt. 
+
+#### Network 2 - Triggers updaten
+
+<img src="https://github.com/Benemenn/autocrib/blob/main/images/Code_Main_Netw2_Triggers.png?raw=true">
+
+Da die Anlage über mehrere mechanische Taster verfügt, wird für die Erkennung eines Signals eine Flankensteuerung verwendet. Dies wird mit den Funktionsbausteinen ``R_TRIG`` realisiert. 
+
+#### Network 3 - Main State Machine
+
+<img src="https://github.com/Benemenn/autocrib/blob/main/images/Code_Main_Netw3_FBSM.png?raw=true">
+
+Im Network 3 wird die Statusmaschine aufgerufen. Siehe [Statusmaschine](#statusmaschine)
+
 ### Statusmaschine
 
 <img src="https://github.com/Benemenn/autocrib/blob/main/diagrams/Lights_StateMachine.png?raw=true" >
@@ -101,6 +123,10 @@ Die Programmierung der Steuerung wird in der Siemens eigenen Entwicklungsumgebun
 - Wenn keine Bewegung erkannt wurde für eine gewisse Zeit (~5 Min), zurück in den minimalen Beleuchtungsmodus. 
 - Error Zustand:
     - noch nicht definiert
+
+#### FB_MainStateMachine
+
+Die Statusmaschine ist ein in SCL programmierter Funktionsbaustein. Das Haupt Statement ist dabei eine ``CASE OF``Anweisung. In dieser Anweisung werden die oben beschriebenen Status durchgewechselt. 
 
 Repositories: 
 
