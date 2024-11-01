@@ -109,15 +109,21 @@ Die Steuerung verfügt über 10 DC Eingänge und 10 Relais Ausgänge. Die Ausän
 #### Ausgänge
 
 - Q0.0 -> Minimalbeleuchtungsgruppe (keine Bewegung erkannt)
+    - z.B. 2-3 Lamepen von weiter weg?
 - Q0.1 -> MinimalPlusBeleuchtungGruppe (Bei erkannter Bewegung)
+    - z.B. Stern, Girlanden Tannenbäume, ...
 - Q0.2 -> LeuchtGruppe 1
+    - z.B. Hintergrund
 - Q0.3 -> LeuchtGruppe 2
+    - z.B. Stall
 - Q0.4 -> LeuchtGruppe 3
+    - z.B. Vordergrung?
 - Q0.5 -> LeuchtGruppe 4
+    - z.B. JesusKind (Highlight)
 - Q0.6 -> 
 - Q0.7 -> 
 
-- Q1.0 -> 
+- Q1.0 -> (Krippenautomat Steckdose?)
 - Q1.1 -> LeuchtGruppe Feuer/Laterne/Krippenautomat
 
 
