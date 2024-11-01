@@ -114,7 +114,19 @@ Die Steuerung verfügt über 10 DC Eingänge und 10 Relais Ausgänge. Die Ausän
 - Q1.1 -> LeuchtGruppe Feuer/Laterne/Krippenautomat
 
 
-### Main
+### Ablauf
+
+- Wenn eine gegebene Uhrzeit am Morgen erreicht ist, dann wird das Display aktiv. -> minimalbeleuchtung Q0.0
+- Wird Bewegung an der Krippe erkannt, so wird Q0.1 & Q1.1 aktiv.
+- Wird dann eine Münze in den Lichtschlichtz geworfen, so startet ein Lichtzyklus.
+- Verschidene Lichtgruppen werden zunächst einzeln angezeigt. (Idee: Hintergrund -> Stall -> Vorne -> Kind)
+- Anschließend werden die Lichtgruppen nacheinander zusammen eingeschaltet. Sind alle Lichtgruppen aktiv, bleibt dieser zustand etwas bestehen. 
+- Zum Schluss werden die Lichtgruppen schnell nacheinander ausgeschaltet. Beleuchtung vom Kind als letztes (Q0.5)
+- Wenn für eine gegebene Zeit keine Bewegung registriert wurde, so wechselt die Anlage wieder in den Minimal Modus, Feuer, Laterne und Krippenautomat werden deaktiviert. 
+
+<img src="https://github.com/Benemenn/autocrib/blob/main/diagrams/Ablaufdiag_Logik.png?raw=true">
+
+### Steuerungsprogrammierung
 
 Das Hauptprogramm ist in LadderDiagram geschrieben. 
 
