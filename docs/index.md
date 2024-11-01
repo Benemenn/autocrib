@@ -86,6 +86,36 @@ Ein an dem Modell verbauten Bewegungssensor ermöglicht das Abschalten der Elekt
 
 Die Programmierung der Steuerung wird in der Siemens eigenen Entwicklungsumgebung TIA-Portal realisiert. Um die verschiedenen Effekte zeitlich abspielen zu können wurde sich für das Konzept einer Statusmaschine entschieden. 
 
+### Ein- und Ausgänge der Steuerung
+
+Die Steuerung verfügt über 10 DC Eingänge und 10 Relais Ausgänge. Die Ausänge schalten jewils 2 Relais, 24V und 230V.
+
+#### Eingänge
+
+- I0.0 -> Bewegungsmelder
+- I0.1 -> Münzerkennung Beleuchtnug
+- I0.2 -> Münzerkennung Krippenautomatik
+- I0.3 -> Schalter Automatik/Testbetrieb
+- I0.4 -> Taster Testbetrieb
+- I0.5 ->
+- I0.6 ->
+- I0.7 -> 
+
+#### Ausgänge
+
+- Q0.0 -> Minimalbeleuchtungsgruppe 
+- Q0.1 -> 
+- Q0.2 -> 
+- Q0.3 -> 
+- Q0.4 -> 
+- Q0.5 -> 
+- Q0.6 -> 
+- Q0.7 -> 
+
+- Q1.0 ->
+- Q1.1 ->
+
+
 ### Main
 
 Das Hauptprogramm ist in LadderDiagram geschrieben. 
@@ -136,8 +166,6 @@ Repositories:
 
 3D Druck mit dem FDM Verfahren bietet bei diesen Sanierungsarbeiten eine einfache und schnelle Prototyping phase ohne hohe Kosten zu verursachen. Bei dem Projekt wurden mehrere Teile für dieses Verfahren designed und verwendet. 
 
-### Münzerkennung
+### Feuerschale
 
-Die Halterung behaust den SICK WL27-3P2430 Reflextionslichttaster. Ein Reflektor (in schwarz dargestellt) dient zur Reflextion des Laser-Sensors. Münzen werden von Oben in den Spalt hineinfallen gelassen. Der Schacht ist breit genug, dass alle Münzarten dadruchlaufen können. Der Scan-Schacht ist klein genug, dass auch die kleinen Münzen nicht in den ScanSchacht hineinfallen können und Blockierungen verursachen. 
-
-<img src="https://github.com/Benemenn/autocrib/blob/gh-pages/CAD/CoinSensorTray/CoinSensorTray.png?raw=true">
+<img src="https://github.com/Benemenn/autocrib/blob/main/images/Feuerschale_techDraw.png?raw=true" >
