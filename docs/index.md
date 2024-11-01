@@ -28,7 +28,7 @@
 
 ## Einführung
 
-In der Kirch St Martin in Düdelingen ist es in unserer Familie mittlerweile zu einer Tradition geworden, um Weihanchten in die Kirche zu gehen und uns die Krippe anzusehen. Vor vielen Jahren wurde dieses Krippenmodell elektrifiziert und mit verschiedenen Licht und Toneffekten ausgestattet. 
+In der Kirche St Martin in Düdelingen ist es in unserer Familie mittlerweile zu einer Tradition geworden, um Weihanchten in die Kirche zu gehen und uns die Krippe anzusehen. Vor vielen Jahren wurde dieses Krippenmodell elektrifiziert und mit verschiedenen Licht und Toneffekten ausgestattet. 
 
 Für eine kleine geldliche Spende von 1€ können die Lichteffekte in einem bestimmten Zyklus abgespielt werden. Ein zweiter Münzeinwurf lässt den Besucher ein weiteres kleinereres Krippenmodell bewundern. Dieses Krippenmodell wird durch die sich öffnenden Tore zusammen mit einem mechanischen Glockenspiel sichtbar. 
 
@@ -42,17 +42,12 @@ Das Krippenmodell und vor allem die Elektronik des Krippenmodelles ist in die Ja
 
 - Januar 2024: Zusammensetzen der Gruppe um das Projekt zu besprechen.
 - Februar 2024: Konzeptionierung des Ersten Sanierungsschrittes.
-- März 24 bis Juli 24: Implementierung der neuen Elektronik.
-- Juli 24 bis September 24: Sommerpause & Implementierung der neuen Software.
-- September 24 bis November 24: Implementierung und Testen der Software auf der Hardware, Fertigstellung der Hardware.
+- März 24 bis November 24: Implementierung der neuen Elektronik. (Schritt 1)
 - Dezember 24: Abschluss des ersten Sanierungsschrittes.
-- 2025: Sanierung der kleinen Krippe mit dem Glockenspiel.
+- 2025: 
+    - Sanierung der kleinen Krippe mit dem Glockenspiel.
+    - Sanierung der Eletronik des Münzeinwurfes
 
-## Sanierung
-
-Für die Sanierung und Erneuerung wurde sich für moderne Komponenten entschieden. Hier eine kleine Übersicht:
-
-## Komponenten
 
 ### Krippe
 
@@ -63,16 +58,17 @@ Die Krippe an sich wird seit vielen Jahren in der Kirche St Martin aufgebaut. De
 ### Kleine Krippe
 
 Neben dem großen Krippenaufbau steht darin noch ein kleinerer Krippenaufbau. Diese Krippe ist in einem Stallmodell versteckt und mit zwei Türen verschlossen. Durch einen geldlichen Einwurf, öffnen sich diese beiden Türen in Begleitung von einem glockenspiel. 
+Hierbei handelt es sich um eine autak funktionierende Krippenautomatik. (Im ersten Schritt wird diese nicht erneuert.)
 
 ### Beleuchtung
 
 Beleuchtet wird die Krippe mit mehreren Scheinwerfern und Effektlichern. 
 
 - Beleuchtung:
-    - 3x 6 Bretter mit Par18 für die Wandmontage
-    - 2x 1 Par 15 zur Montage auf der Platte (Unter Baumstamm)
+    - 3x Bretter mit jeweils 6 Scheinwerfen (Wandmontage)
+    - 2x Bretter für direktere Beleuchtung (Montage in Krippendisplay)
     - 1x Laterne
-    - 1x Theater-feuer
+    - 1x Feuer
     - Lichterketten im Hintergrund
 
 ### Elektronik
