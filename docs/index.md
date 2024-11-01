@@ -100,9 +100,9 @@ Die Steuerung verfügt über 10 DC Eingänge und 10 Relais Ausgänge. Die Ausän
 - I0.0 -> Bewegungsmelder
 - I0.1 -> Münzerkennung Beleuchtnug
 - I0.2 -> Münzerkennung Krippenautomatik
-- I0.3 -> Schalter Automatik/Testbetrieb
+- I0.3 -> Geldscheinerkennung
 - I0.4 -> Taster Testbetrieb
-- I0.5 ->
+- I0.5 -> Schalter Automatik/Testbetrieb
 - I0.6 ->
 - I0.7 -> 
 
