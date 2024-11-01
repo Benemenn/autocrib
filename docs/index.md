@@ -77,8 +77,6 @@ Ein an dem Modell verbauten Bewegungssensor ermöglicht das Abschalten der Elekt
 ### Datenblätter
 
 - [Siemens S7-1215C AC DC RLY](./Datasheets/Siemens_S71215_AC-DC-RLY.pdf)
-- [SICK WL27-3P2430](./Datasheets/Sick_Lichtschranke_WL27-3P2430_1027769_de.pdf)
-- [M12-4 Buchse&Kabel](./Datasheets/SICK_M12-5_Buchse_dataSheet_YF2A14-050VB3XLEAX_2096235_de.pdf)
 
 ***           
 
@@ -103,17 +101,17 @@ Die Steuerung verfügt über 10 DC Eingänge und 10 Relais Ausgänge. Die Ausän
 
 #### Ausgänge
 
-- Q0.0 -> Minimalbeleuchtungsgruppe 
-- Q0.1 -> 
-- Q0.2 -> 
-- Q0.3 -> 
-- Q0.4 -> 
-- Q0.5 -> 
+- Q0.0 -> Minimalbeleuchtungsgruppe (keine Bewegung erkannt)
+- Q0.1 -> MinimalPlusBeleuchtungGruppe (Bei erkannter Bewegung)
+- Q0.2 -> LeuchtGruppe 1
+- Q0.3 -> LeuchtGruppe 2
+- Q0.4 -> LeuchtGruppe 3
+- Q0.5 -> LeuchtGruppe 4
 - Q0.6 -> 
 - Q0.7 -> 
 
-- Q1.0 ->
-- Q1.1 ->
+- Q1.0 -> 
+- Q1.1 -> LeuchtGruppe Feuer/Laterne/Krippenautomat
 
 
 ### Main
