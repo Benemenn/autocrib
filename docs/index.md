@@ -30,11 +30,11 @@
 
 In der Kirche St Martin in Düdelingen ist es in unserer Familie mittlerweile zu einer Tradition geworden, um Weihanchten in die Kirche zu gehen und uns die Krippe anzusehen. Vor vielen Jahren wurde dieses Krippenmodell elektrifiziert und mit verschiedenen Licht und Toneffekten ausgestattet. 
 
-Für eine kleine geldliche Spende von 1€ können die Lichteffekte in einem bestimmten Zyklus abgespielt werden. Ein zweiter Münzeinwurf lässt den Besucher ein weiteres kleinereres Krippenmodell bewundern. Dieses Krippenmodell wird durch die sich öffnenden Tore zusammen mit einem mechanischen Glockenspiel sichtbar. 
+Für eine kleine geldliche Spende können die Lichteffekte in einem bestimmten Zyklus abgespielt werden. Ein zweiter Münzeinwurf lässt den Besucher ein weiteres kleinereres Krippenmodell bewundern. Dieses Krippenmodell wird durch die sich öffnenden Tore zusammen mit einem mechanischen Glockenspiel sichtbar. 
 
 Die Elektronische Steuerung der gesamten Krippe wurde mit einem Zeitmodul von einer Waschmaschine realisiert. 
 
-Das Krippenmodell und vor allem die Elektronik des Krippenmodelles ist in die Jahre gekommen. Die Gruppe, welche sich um die Krippe kümmert hat sich daher entschieden das gesamte Krippenmodell zu sanieren, und die Elektronik in eine moderne Steuerung zu erneuern. 
+Die Elektrik-Komponenten der Krippe wurden zuletzt vor rund 25Jahren erneuert. Die Krippengruppe hat sich daher enschieden die Elektronik zu erneuern. 
 
 <img src="https://github.com/Benemenn/autocrib/blob/gh-pages/images/Krippe.jpeg?raw=true">
 
@@ -44,7 +44,7 @@ Das Krippenmodell und vor allem die Elektronik des Krippenmodelles ist in die Ja
 - Februar 2024: Konzeptionierung des Ersten Sanierungsschrittes.
 - März 24 bis November 24: Implementierung der neuen Elektronik. (Schritt 1)
 - Dezember 24: Abschluss des ersten Sanierungsschrittes.
-- 2025: 
+- 2025: todo
     - Sanierung der kleinen Krippe mit dem Glockenspiel.
     - Sanierung der Eletronik des Münzeinwurfes
 
@@ -79,11 +79,6 @@ Die Möglichkeit mit einem Münzeinwurf funktionen zu aktivieren wird beibehalte
 
 Ein an dem Modell verbauten Bewegungssensor ermöglicht das Abschalten der Elektronik, sofern diese nicht benötigt wird, was eine erhebliche Stromersparnis darstellt. 
 
-***
-
-### Datenblätter
-
-- [Siemens S7-1215C AC DC RLY](./Datasheets/Siemens_S71215_AC-DC-RLY.pdf)
 
 ***           
 
@@ -93,37 +88,31 @@ Die Programmierung der Steuerung wird in der Siemens eigenen Entwicklungsumgebun
 
 ### Ein- und Ausgänge der Steuerung
 
-Die Steuerung verfügt über 10 DC Eingänge und 10 Relais Ausgänge. Die Ausänge schalten jewils 2 Relais, 24V und 230V.
+Die Steuerung verfügt über 10 DC Eingänge und 10 potentialfreie Relais-Ausgänge. Die Ausgänge werden mit 24V versorgt, welche ebenfalls Relais auf 230V schalten. Jeder Ausgang kann dadurch 24VDC und 230VAC schalten. 
 
 #### Eingänge
 
-- I0.0 -> Bewegungsmelder
-- I0.1 -> Münzerkennung Beleuchtnug
-- I0.2 -> Münzerkennung Krippenautomatik
-- I0.3 -> Geldscheinerkennung
-- I0.4 -> Taster Testbetrieb
-- I0.5 -> Schalter Automatik/Testbetrieb
+- I0.0 -> 
+- I0.1 -> 
+- I0.2 -> TasterTestmodusß
+- I0.3 -> Bewegungsmelder
+- I0.4 -> Münzsensor Beleuchtung
+- I0.5 ->
 - I0.6 ->
 - I0.7 -> 
 
 #### Ausgänge
 
-- Q0.0 -> Minimalbeleuchtungsgruppe (keine Bewegung erkannt)
-    - z.B. 2-3 Lamepen von weiter weg?
-- Q0.1 -> MinimalPlusBeleuchtungGruppe (Bei erkannter Bewegung)
-    - z.B. Stern, Girlanden Tannenbäume, ...
-- Q0.2 -> LeuchtGruppe 1
-    - z.B. Hintergrund
-- Q0.3 -> LeuchtGruppe 2
-    - z.B. Stall
-- Q0.4 -> LeuchtGruppe 3
-    - z.B. Vordergrung?
-- Q0.5 -> LeuchtGruppe 4
-    - z.B. JesusKind (Highlight)
-- Q0.6 -> 
-- Q0.7 -> 
+- Q0.0 -> Minimalbeleuchtungsgruppe (keine Bewegung erkannt) -> Blau & Rot, dunkler Nachthimmel + Lichterketten Bäume
+- Q0.1 -> MinimalPlusBeleuchtungGruppe (Bei erkannter Bewegung) -> Gelbe Grundhelligkeit
+- Q0.2 -> LeuchtGruppe 1 -> Kaltweiss, Engel
+- Q0.3 -> LeuchtGruppe 2 -> Rot, Hirten
+- Q0.4 -> LeuchtGruppe 3 -> Grün, Josef/Maria => Hoffnung
+- Q0.5 -> LeuchtGruppe 4 -> Fokus Jesus, WarmWeiss
+- Q0.6 -> n.b.
+- Q0.7 -> n.b.
 
-- Q1.0 -> (Krippenautomat Steckdose?)
+- Q1.0 -> n.b.
 - Q1.1 -> LeuchtGruppe Feuer/Laterne/Krippenautomat
 
 
@@ -134,10 +123,10 @@ Lichtzyklus -> 80 sec
 - Wenn eine gegebene Uhrzeit am Morgen erreicht ist, dann wird das Display aktiv. -> minimalbeleuchtung Q0.0
 - Wird Bewegung an der Krippe erkannt, so wird Q0.1 & Q1.1 aktiv.
 - Wird dann eine Münze in den Lichtschlichtz geworfen, so startet ein Lichtzyklus.
-- Verschidene Lichtgruppen werden zunächst einzeln angezeigt. (Idee: Hintergrund -> Stall -> Vorne -> Kind)
+- Verschidene Lichtgruppen werden zunächst einzeln angezeigt. (Idee: Engel, Hirten, Familie, Kind)
 - Anschließend werden die Lichtgruppen nacheinander zusammen eingeschaltet. Sind alle Lichtgruppen aktiv, bleibt dieser zustand etwas bestehen. 
-- Zum Schluss werden die Lichtgruppen schnell nacheinander ausgeschaltet. Beleuchtung vom Kind als letztes (Q0.5)
-- Wenn für eine gegebene Zeit keine Bewegung registriert wurde, so wechselt die Anlage wieder in den Minimal Modus, Feuer, Laterne und Krippenautomat werden deaktiviert. 
+- Zum Schluss werden die Lichtgruppen schnell nacheinander ausgeschaltet. Beleuchtung vom Kind als letztes.
+- Wenn für eine gegebene Zeit keine Bewegung registriert wurde (100sek), so wechselt die Anlage wieder in den Minimal Modus, Feuer, Laterne und Krippenautomat werden deaktiviert. 
 
 <img src="https://github.com/Benemenn/autocrib/blob/main/diagrams/Ablaufdiag_Logik.png?raw=true">
 
@@ -173,7 +162,7 @@ Im Network 3 wird die Statusmaschine aufgerufen. Siehe [Statusmaschine](#statusm
 - keine Beleuchtung solange keine Bewegungen erkannt wurden. 
 - Nach Bewegungserkennung, minimale Beleuchtung. 
 - Nach Münz- oder Papiergeldeinwurf, Spielen des Glockenspiels und Lichteranimation
-- Wenn keine Bewegung erkannt wurde für eine gewisse Zeit (~5 Min), zurück in den minimalen Beleuchtungsmodus. 
+- Wenn keine Bewegung erkannt wurde für eine gewisse Zeit, zurück in den minimalen Beleuchtungsmodus. 
 - Error Zustand:
     - noch nicht definiert
 
@@ -189,7 +178,29 @@ Repositories:
 
 ***
 
-## CAD
+## Hardware
+
+### Seitenpanele
+
+Die Seitenpanele auf der Linken und rechten Seite der Krippe bestehen aus 6 Scheinwerfern, welche durch das Ausrichten verschiedene Bereiche der Krippe fokussieren können. 
+
+Um den Aufbau zu vereinfachen werden diese Seitenpanele mit Harting Steckern verpolungssicher am Verteilerkasten angeschlossen. In den Seitenpanelen sind unter anderem der Bewegungsmelder, eine 230V PowerCon Steckdose und eine 24V Steckdose verbaut worden. 
+
+<img src="https://github.com/Benemenn/autocrib/blob/main/images/Seitenpanele.jpeg?raw=true">
+
+### Feuerstelle
+
+Die alte Feuerstelle der Krippe war eine RLC-Schwinkreis um 2 E10 Birnen zum Flackern zu bringen. Die modernisierte Lösung beinhaltet einen Arduino Nano und eine Ringplatte mit NeoPixeln. 
+
+<img src="https://github.com/Benemenn/autocrib/blob/main/images/Kreppchen_Feier.jpeg?raw=true">
+
+### Laterne
+
+Ein neues Feature der Krippe stelle eine Laterne mit einem simulierten Feuer da. Wie bei der Feuerstelle wurde bei der Laterne auch ein Arduino Nano und Stäbe mit Neopixel verwendet. 
+
+<img src="https://github.com/Benemenn/autocrib/blob/main/images/Kreppchen_Lanter.jpeg?raw=true">
+
+## CAD & eCAD
 
 3D Druck mit dem FDM Verfahren bietet bei diesen Sanierungsarbeiten eine einfache und schnelle Prototyping phase ohne hohe Kosten zu verursachen. Bei dem Projekt wurden mehrere Teile für dieses Verfahren designed und verwendet. 
 
