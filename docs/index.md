@@ -26,6 +26,8 @@
 
 # Beschreibung
 
+Demo Video: [youtube.com](https://youtu.be/dYBJWvyT4Do)
+
 ## Einführung
 
 In der Kirche St Martin in Düdelingen ist es in unserer Familie mittlerweile zu einer Tradition geworden, um Weihanchten in die Kirche zu gehen und uns die Krippe anzusehen. Vor vielen Jahren wurde dieses Krippenmodell elektrifiziert und mit verschiedenen Licht und Toneffekten ausgestattet. 
